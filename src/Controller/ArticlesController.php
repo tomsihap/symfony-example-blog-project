@@ -58,6 +58,8 @@ class ArticlesController extends AbstractController
             $entityManager->flush();
 
             $this->addFlash('success', 'L\'article ' . $article->getTitle() . ' a bien été ajouté.');
+            $this->addFlash('danger', 'L\'article a été supprimé.');
+            $this->addFlash('warning', 'L\'article a été modifié.');
 
             return $this->redirectToRoute('articles');
         }
