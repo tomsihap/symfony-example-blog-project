@@ -1,0 +1,14 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <h1>Page d'administration du blog</h1>
+
+    <ul>
+        <li>
+            <a href="{{ path('articles_index') }}">Gestion des articles</a>
+        </li>
+        <li>
+            <a href="">Gestion des catégories</a>
+        </li>
+    </ul>
+{% endblock body %}
