@@ -18,7 +18,7 @@ class ArticlesController extends AbstractController
     private $articleRepository;
 
     /**
-     * @Route("/articles", methods={"GET"}, name="articles")
+     * @Route("/articles", methods={"GET"}, name="articles_index")
      */
     public function index(ArticleRepository $articleRepository) : Response
     {
